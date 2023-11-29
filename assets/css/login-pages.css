@@ -1,0 +1,228 @@
+/* 
+*
+* Template Name: Login pages Css
+* For: All the login pages like: Login, SignIn, Email Varification pages etc..
+*
+*/
+
+/* Importing main Css */
+@import url(/assets/css/main.css);
+
+/* Header */
+
+.header {
+    background-color: var(--white);
+    border-bottom: 1px solid #F5F5F5;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.header-logo {
+    width: 146.147px;
+    height: 27px;
+}
+
+.login-header .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px;
+}
+
+.login-header .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 19px;
+}
+
+.login-header .header-page-title {
+    color: #7E8284;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 19px;
+    border-left: 1px solid #7E8284;
+}
+
+.login-header .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+
+.login-header .right .loginLink {
+    color: #7E8284;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* login form  */
+
+.login-form-wrapper {
+    min-height: 80vh;
+    /* width: calc(100vw - 20px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+
+.login-card {
+    max-width: 438px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #EDEDED;
+    background: var(--white);
+    margin: auto;
+    padding-top: 32px;
+    padding-bottom: 28px;
+}
+
+.login-card.login-card-lg {
+    max-width: 658px;
+}
+
+.login-card-title {
+    padding: 0 31px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.login-card-title h1 {
+    color: var(--secondary);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0;
+    margin-bottom: 9px;
+}
+
+.login-card-title p {
+    color: #7E8284;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.account-form {
+    padding: 24px 31px 0 31px;
+}
+
+.password-valitdation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 11px;
+    margin-bottom: 35px;
+}
+
+.password-valitdation span {
+    color: #7E8284;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+}
+
+.password-valitdation span:nth-child(2n) {
+    justify-content: flex-end;
+}
+
+.password-valitdation span:before {
+    content: "";
+    height: 10px;
+    width: 10px;
+    background: #EDEDED;
+    border-radius: 50%;
+}
+
+.password-valitdation span.active {
+    text-decoration: line-through;
+}
+
+.password-valitdation span.active:before {
+    background-color: var(--green);
+}
+
+.login-form-wrapper .condations {
+    margin-bottom: 20px;
+}
+
+.login-form-wrapper .condations>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 11px;
+}
+
+.login-form-wrapper .account-note-text,
+.login-form-wrapper .account-text-link {
+    color: #7E8284;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login-form-wrapper .account-note-text span {
+    color: var(--red);
+}
+
+.login-form-wrapper p a,
+.login-form-wrapper .account-text-link a {
+    color: var(--primary);
+}
+
+.login-form-wrapper label.has-link {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login-form-wrapper label.has-link a {
+    color: #7E8284;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.login-form-wrapper label.has-link a:hover {
+    color: var(--primary);
+}
+
+.login-form-wrapper .primaryBtn {
+    max-width: 376px;
+    margin: auto;
+}
+
+.verification-code-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+.verification-code-row input {
+    max-width: 49px;
+    max-height: 49px;
+    width: 100%;
+    height: 100%;
+
+}

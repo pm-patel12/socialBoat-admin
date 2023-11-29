@@ -1,5 +1,14 @@
+/* 
+*
+* Template Name: Main Css
+* For: This is a common css for writting a common css, Which will be used throught the website.
+*
+*/
+
+/* Importing Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
-@import url(/assets/variables.css);
+
+/* Importing variables css */
 @import url(/assets/css/variables.css);
 
 
@@ -53,6 +62,12 @@ p {
     line-height: 24px;
 }
 
+hr.divider {
+    color: red;
+    border: 1px solid #EDEDED;
+    margin: 16px 0;
+}
+
 /* primaryBtn */
 
 .primaryBtn {
@@ -68,6 +83,10 @@ p {
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+.primaryBtn.bg-green {
+    background-color: var(--green);
 }
 
 .primaryBtn.btnlg {
@@ -160,6 +179,7 @@ input[type='checkbox']:checked {
     background-repeat: no-repeat;
 }
 
+
 .form-label {
     color: var(--secondary);
     font-size: 14px;
@@ -202,192 +222,4 @@ input[type='checkbox']:checked {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.password-input .password-view-btn.active {}
-
-/* Header */
-
-.header {
-    background-color: var(--white);
-    border-bottom: 1px solid #F5F5F5;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.10);
-}
-
-.header-logo {
-    width: 146.147px;
-    height: 27px;
-}
-
-.login-header .inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 9px;
-}
-
-.login-header .left {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 19px;
-}
-
-.login-header .header-page-title {
-    color: #7E8284;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    padding-left: 19px;
-    border-left: 1px solid #7E8284;
-}
-
-.login-header .right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 19px;
-}
-
-.login-header .right .loginLink {
-    color: #7E8284;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-}
-
-/* login form  */
-
-.login-form-wrapper {
-    height: calc(100vh - 160px);
-    /* width: calc(100vw - 20px); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 10px;
-}
-
-.login-card {
-    max-width: 438px;
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #EDEDED;
-    background: var(--white);
-    margin: auto;
-    padding-top: 32px;
-    padding-bottom: 28px;
-}
-
-.login-card-title {
-    padding: 0 31px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #EDEDED;
-}
-
-.login-card-title h1 {
-    color: var(--secondary);
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    padding: 0;
-    margin-bottom: 9px;
-}
-
-.login-card-title p {
-    color: #7E8284;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-}
-
-.account-form {
-    padding: 24px 31px 0 31px;
-}
-
-.password-valitdation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 11px;
-    margin-bottom: 35px;
-}
-
-.password-valitdation span {
-    color: #7E8284;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 7px;
-}
-
-.password-valitdation span:nth-child(2n) {
-    justify-content: flex-end;
-}
-
-.password-valitdation span:before {
-    content: "";
-    height: 10px;
-    width: 10px;
-    background: #EDEDED;
-    border-radius: 50%;
-}
-
-.password-valitdation span.active {
-    text-decoration: line-through;
-}
-
-.password-valitdation span.active:before {
-    background-color: var(--green);
-}
-
-.login-form-wrapper .condations {
-    margin-bottom: 20px;
-}
-
-.login-form-wrapper .condations>div {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 11px;
-}
-
-.login-form-wrapper .account-text-link {
-    color: #7E8284;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    width: 100%;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.login-form-wrapper .account-text-link a {
-    color: var(--primary);
-}
-
-.login-form-wrapper label.has-link {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.login-form-wrapper label.has-link a {
-    color: #7E8284;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-}
-
-.login-form-wrapper label.has-link a:hover {
-    color: var(--primary);
 }

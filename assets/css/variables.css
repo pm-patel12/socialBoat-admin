@@ -1,30 +1,21 @@
+/* 
+*
+* Template Name: variables Css
+* For: Adding css variables
+*
+*/
 :root {
+
+    /* Primary Colors */
     --primary: #1570EF;
     --primary-light: #F4F9FF;
     --secondary: #111111;
     --green: #21A366;
     --red: #F04438;
     --background: #F8FBFF;
-    --gray100: #F2F4F7;
-    --gray200: #EAECF0;
-    --gray300: #D0D5DD;
-    --gray400: #98A2B3;
-    --gray500: #667085;
-    --gray600: #475467;
-    --gray700: #475467;
-    --gray900: #101828;
-    --gray50: #F9FAFB;
-    --white: #ffffff;
-}
+    --white: #fff;
 
-
-
-
-:root {
-
-/* Primary Colors */
-
-/* Gray */
+    /* Gray */
     --gray25: #FCFCFD;
     --gray50: #F9FAFB;
     --gray100: #F2F4F7;
@@ -36,8 +27,8 @@
     --gray700: #344054;
     --gray800: #1D2939;
     --gray900: #101828;
-    
-/* Brand - Company Color */
+
+    /* Brand - Company Color */
     --brand25: #FCFAFF;
     --brand50: #F9F5FF;
     --brand100: #F4EBFF;
@@ -50,7 +41,7 @@
     --brand800: #53389E;
     --brand900: #42307D;
 
-/* Error */
+    /* Error */
     --error25: #FFFBFA;
     --error50: #FEF3F2;
     --error100: #FEE4E2;
@@ -63,7 +54,7 @@
     --error800: #912018;
     --error900: #7A271A;
 
-/* Warning */
+    /* Warning */
     --warning25: #FFFCF5;
     --warning50: #FFFAEB;
     --warning100: #FEF0C7;
@@ -76,7 +67,7 @@
     --warning800: #93370D;
     --warning900: #7A2E0E;
 
-/* Success */
+    /* Success */
     --success25: #F6FEF9;
     --success50: #ECFDF3;
     --success100: #D1FADF;
@@ -90,9 +81,9 @@
     --success900: #054F31;
 
 
-/* Secondary Colors */
+    /* Secondary Colors */
 
-/* Blue Gray */
+    /* Blue Gray */
     --bluegray25: #FCFCFD;
     --bluegray50: #F8F9FC;
     --bluegray100: #EAECF5;
@@ -105,7 +96,7 @@
     --bluegray800: #293056;
     --bluegray900: #101323;
 
-/* Blue light */
+    /* Blue light */
     --bluelight25: #F5FBFF;
     --bluelight50: #F0F9FF;
     --bluelight100: #E0F2FE;
@@ -118,7 +109,7 @@
     --bluelight800: #065986;
     --bluelight900: #0B4A6F;
 
-/* Blue */
+    /* Blue */
     --blue25: #F5FAFF;
     --blue50: #EFF8FF;
     --blue100: #D1E9FF;
@@ -131,7 +122,7 @@
     --blue800: #1849A9;
     --blue900: #194185;
 
-/* Indigo */
+    /* Indigo */
     --indigo25: #F5F8FF;
     --indigo50: #EEF4FF;
     --indigo100: #E0EAFF;
@@ -144,7 +135,7 @@
     --indigo800: #2D31A6;
     --indigo900: #2D3282;
 
-/* Purple */
+    /* Purple */
     --purple25: #FAFAFF;
     --purple50: #F4F3FF;
     --purple100: #EBE9FE;
@@ -157,7 +148,7 @@
     --purple800: #4A1FB8;
     --purple900: #3E1C96;
 
-/* Pink */
+    /* Pink */
     --pink25: #FEF6FB;
     --pink50: #FDF2FA;
     --pink100: #FCE7F6;
@@ -170,7 +161,7 @@
     --pink800: #9E165F;
     --pink900: #851651;
 
-/* Rose */
+    /* Rose */
     --rose25: #FFF5F6;
     --rose50: #FFF1F3;
     --rose100: #FFE4E8;
@@ -183,7 +174,7 @@
     --rose800: #A11043;
     --rose900: #89123E;
 
-/* Orange */
+    /* Orange */
     --orange25: #FFFAF5;
     --orange50: #FFF6ED;
     --orange100: #FFEAD5;
@@ -197,9 +188,9 @@
     --orange900: #7E2410;
 
 
-/* Gradients */
+    /* Gradients */
 
-/* Gray Gradients */
+    /* Gray Gradients */
     fill: var(--gradient-gray-60050090-deg, linear-gradient(90deg, #475467 0%, #667085 100%));
     fill: var(--gradient-gray-70060045-deg, linear-gradient(45deg, #344054 0%, #475467 100%));
     fill: var(--gradient-gray-80060045-deg, linear-gradient(45deg, #1D2939 0%, #475467 100%));
@@ -207,7 +198,7 @@
     fill: var(--gradient-gray-800700265-deg, linear-gradient(27deg, #1D2939 8.33%, #344054 91.67%));
     fill: var(--gradient-gray-90060045-deg, linear-gradient(45deg, #101828 0%, #475467 100%));
 
-/* Brand Gradients */
+    /* Brand Gradients */
     fill: var(--gradient-brand-60050090-deg, linear-gradient(90deg, #7F56D9 0%, #9E77ED 100%));
     fill: var(--gradient-brand-70060045-deg, linear-gradient(45deg, #6941C6 0%, #7F56D9 100%));
     fill: var(--gradient-brand-80060045-deg, linear-gradient(45deg, #53389E 0%, #7F56D9 100%));
@@ -215,4 +206,7 @@
     fill: var(--gradient-brand-800700265-deg, linear-gradient(27deg, #53389E 8.33%, #6941C6 91.67%));
     fill: var(--gradient-brand-90060045-deg, linear-gradient(45deg, #42307D 0%, #7F56D9 100%));
 
+
+    /* Other */
+    --sidebar-width: 290px;
 }

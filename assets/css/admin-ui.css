@@ -1,0 +1,251 @@
+/* 
+*
+* Template Name: variables
+* For: Admin sidebar, Heaer, Footer etc..
+*
+*/
+
+/* Importing main Css */
+@import url(/assets/css/main.css);
+
+
+/*  */
+/* Sidebar css */
+/*  */
+
+.main-container {
+    display: flex;
+}
+
+.content-body {
+    padding-left: var(--sidebar-width);
+    width: calc(100vw - var(--sidebar-width));
+}
+
+.side-bar-wrapper {
+    max-width: var(--sidebar-width);
+    width: var(--sidebar-width);
+    overflow: hidden;
+    background: var(--white);
+    border-right: 1px solid #EDEDED;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding: 0 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.side-bar-wrapper .site-logo {
+    padding-top: 22px;
+    margin-bottom: 22px;
+}
+
+.side-bar-wrapper .site-logo img {
+    height: 35px;
+    width: auto;
+}
+
+.side-bar-wrapper .sidebar-menu-wrap {
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100% - 100px);
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 16px;
+}
+
+.side-bar-wrapper .sidebar-menu-wrap .top,
+.side-bar-wrapper .sidebar-menu-wrap .bottom {
+    width: 100%;
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: unset;
+    color: var(--gray700);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul.account-menu li.menu-active:hover a,
+.side-bar-wrapper .sidebar-menu-wrap ul.account-menu li.menu-active a,
+.side-bar-wrapper .sidebar-menu-wrap ul.sidebar-menu li.menu-active:hover a,
+.side-bar-wrapper .sidebar-menu-wrap ul.sidebar-menu li.menu-active a {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul.sidebar-menu li.menu-active:hover a svg,
+.side-bar-wrapper .sidebar-menu-wrap ul.sidebar-menu li.menu-active a svg,
+.side-bar-wrapper .sidebar-menu-wrap ul.account-menu li.menu-active:hover a svg,
+.side-bar-wrapper .sidebar-menu-wrap ul.account-menu li.menu-active a svg {
+    stroke: var(--white);
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul.account-menu li.menu-active a::after,
+.side-bar-wrapper .sidebar-menu-wrap ul.sidebar-menu li.menu-active a::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 22 22' fill='none'%3E%3Cg clip-path='url(%23clip0_28_606)'%3E%3Cpath d='M6.41602 6.4165L10.9993 10.9998L6.41602 15.5832' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13 6.4165L17.5833 10.9998L13 15.5832' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_28_606'%3E%3Crect width='22' height='22' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    height: 22px;
+    width: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    transform: translate(0, 50%);
+
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul li a svg {
+    stroke: var(--gray700);
+
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul li:hover a {
+    background: var(--primary-light);
+    color: var(--primary);
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul li:hover a svg {
+    stroke: var(--primary);
+}
+
+.side-bar-wrapper .sidebar-menu-wrap h4 {
+    color: var(--gray900);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 2px 14px 0 14px;
+
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul.pinned-projects li.menu-active a {
+    color: var(--primary);
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul.pinned-projects li a::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_39_51)'%3E%3Cpath d='M12.5007 3.75L9.16732 7.08333L5.83398 8.33333L4.58398 9.58333L10.4173 15.4167L11.6673 14.1667L12.9173 10.8333L16.2507 7.5' stroke='%2398A2B3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M7.5 12.5L3.75 16.25' stroke='%2398A2B3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12.084 3.3335L16.6673 7.91683' stroke='%2398A2B3' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_39_51'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.side-bar-wrapper .sidebar-menu-wrap ul.pinned-projects li a:hover::before,
+.side-bar-wrapper .sidebar-menu-wrap ul.pinned-projects li.menu-active a::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cg clip-path='url(%23clip0_39_56)'%3E%3Cpath d='M12.5946 2.67524L12.6729 2.74441L17.2562 7.32774C17.3967 7.46897 17.4819 7.65585 17.4965 7.85452C17.5111 8.05318 17.454 8.25049 17.3356 8.41069C17.2172 8.57089 17.0453 8.68339 16.8512 8.72779C16.657 8.7722 16.4533 8.74557 16.2771 8.65274L13.6337 11.2952L12.4471 14.4594C12.4158 14.5429 12.3713 14.6208 12.3154 14.6902L12.2571 14.7569L11.0071 16.0069C10.8635 16.1503 10.6725 16.2363 10.47 16.2489C10.2674 16.2615 10.0673 16.1997 9.90706 16.0752L9.82789 16.0061L7.50039 13.6794L4.33956 16.8394C4.18959 16.9889 3.98836 17.0756 3.77674 17.0821C3.56511 17.0886 3.35896 17.0142 3.20016 16.8742C3.04136 16.7342 2.9418 16.5389 2.92173 16.3282C2.90165 16.1174 2.96255 15.9069 3.09206 15.7394L3.16123 15.6611L6.32123 12.5002L3.99456 10.1727C3.85108 10.0292 3.76489 9.83833 3.75215 9.63581C3.73942 9.43329 3.80102 9.23308 3.92539 9.07274L3.99456 8.99441L5.24456 7.74441C5.30744 7.68131 5.38002 7.62869 5.45956 7.58857L5.54123 7.55357L8.70456 6.36607L11.3471 3.72441C11.2569 3.55593 11.2275 3.36161 11.2636 3.17399C11.2996 2.98638 11.3991 2.81685 11.5453 2.69382C11.6914 2.57079 11.8754 2.50172 12.0665 2.49819C12.2575 2.49466 12.4439 2.5577 12.5946 2.67524Z' fill='%231570EF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_39_56'%3E%3Crect width='20' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.side-bar-wrapper .user-sec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.side-bar-wrapper .user-sec h6 {
+    color: #475467;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.side-bar-wrapper .user-sec p {
+    color: #98A2B3;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: -6px;
+}
+
+/*  */
+/* Admin Header Css */
+/*  */
+
+.header-wrapper {
+    background-color: var(--white);
+    border-bottom: 1px solid #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 22px 26px;
+    gap: 40px;
+}
+
+.header-wrapper p {
+    color: #475467;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.header-wrapper select {
+    color: #475467;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.header-wrapper .notifications {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.header-wrapper .notifications::after {
+    content: attr(data-notification-count);
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    display: flex;
+    color: var(--white);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px;
+    background-color: var(--red);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
