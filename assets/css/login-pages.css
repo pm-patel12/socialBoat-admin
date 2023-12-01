@@ -226,3 +226,13 @@
     height: 100%;
 
 }
+
+dotlottie-player.lottie-celebration-animation {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    bottom: 0;left: 0;right: 0;
+    width: unset !important;
+    height: unset !important;
+    /* transform: translate(40%, 50%); */
+}

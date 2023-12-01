@@ -8,5 +8,8 @@ $(document).ready(function () {
             $(this).toggleClass('active')
         }
     })
-
+// Lottie Animation remove
+setTimeout(function() {
+    $('.lottie-celebration-animation').remove();
+}, 5000);
 })
