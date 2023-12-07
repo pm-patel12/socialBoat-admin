@@ -8,8 +8,11 @@ $(document).ready(function () {
             $(this).toggleClass('active')
         }
     })
-// Lottie Animation remove
-setTimeout(function() {
-    $('.lottie-celebration-animation').remove();
-}, 5000);
+    // Lottie Animation remove
+    setTimeout(function () {
+        $('.lottie-celebration-animation').remove();
+    }, 5000);
+    // tooltip
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 })

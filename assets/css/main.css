@@ -70,6 +70,26 @@ hr.divider {
 
 /* primaryBtn */
 
+.grayBtn {
+    border-radius: 5px;
+    background: var(--gray100);
+    color: var(--gray500);
+    text-align: right;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 5px 11px 5px 18px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.grayBtn:hover {
+    background: var(--gray200);
+    color: var(--gray700);
+}
+
 .primaryBtn {
     border-radius: 5px;
     background: var(--primary);
@@ -222,4 +242,13 @@ input[type='checkbox']:checked {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.offcanvas-backdrop {
+    background-color: rgba(16, 24, 40, 0.32);
+    backdrop-filter: blur(11px);
+}
+
+.offcanvas-backdrop.show {
+    opacity: 1;
 }
